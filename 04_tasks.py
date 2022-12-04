@@ -23,7 +23,7 @@ def load_tasks():
 # print(sum(load_tasks())) >> 453
 
 def has_intersection(first, second):
-    return len(set(range(first[0], first[1] + 1)).intersection(range(second[0], second[1] + 1))) > 0
+    return bool(set(range(first[0], first[1] + 1)).intersection(range(second[0], second[1] + 1)))
 
 def load_tasks2():
     intersections = []
